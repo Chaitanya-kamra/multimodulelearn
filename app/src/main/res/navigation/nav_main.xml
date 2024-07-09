@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main.xml"
+    app:startDestination="@id/nav_home">
+
+<!--    <fragment-->
+<!--        android:id="@+id/dashboardFragment"-->
+<!--        android:name="com.chaitanya.dashboard.DashFragment">-->
+<!--        <deepLink-->
+<!--            android:id="@+id/deepLink2"-->
+<!--            app:uri="myApp://dashboard" />-->
+<!--        <action-->
+<!--            android:id="@+id/action_dashFragment_to_dash2Fragment"-->
+<!--            app:destination="@id/dash2Fragment" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/dash2Fragment"-->
+<!--        android:name="com.chaitanya.dashboard.Dash2Fragment"-->
+<!--        android:label="fragment_dash2"-->
+<!--        tools:layout="@layout/fragment_dash2" />-->
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.chaitanya.home.HomeFragment"
+        android:label="home">
+    </fragment>
+    <include app:graph="@navigation/nav_dash"
+        >
+
+    </include>
+    <include app:graph="@navigation/nav_home"
+        >
+
+    </include>
+
+</navigation>

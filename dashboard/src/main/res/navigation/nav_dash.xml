@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_dash"
+    app:startDestination="@id/dashFragment">
+
+
+    <fragment
+        android:id="@+id/dashFragment"
+        android:name="com.chaitanya.dashboard.DashFragment"
+        tools:layout="@layout/fragment_dash" >
+        <action
+            android:id="@+id/action_dashFragment_to_dash2Fragment"
+            app:destination="@id/dash2Fragment" />
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="myApp://dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/dash2Fragment"
+        android:name="com.chaitanya.dashboard.Dash2Fragment"
+        android:label="fragment_dash2"
+        tools:layout="@layout/fragment_dash2" />
+</navigation>
