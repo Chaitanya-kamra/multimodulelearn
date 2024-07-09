@@ -3,19 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment"
+    tools:context=".MainFragment"
     android:orientation="vertical"
     android:gravity="center">
 
+    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2st Fragment in home(featA) module"
+        android:text="1st Fragment in app module"
         android:textSize="24dp"/>
     <Button
-        android:id="@+id/atv"
+        android:id="@+id/mainBt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="go to 3" />
-
+        android:text="Go to 2nd"/>
 </LinearLayout>

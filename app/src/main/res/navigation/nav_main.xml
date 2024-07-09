@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_main.xml"
-    app:startDestination="@id/nav_home">
+    app:startDestination="@id/mainFragment">
 
 <!--    <fragment-->
 <!--        android:id="@+id/dashboardFragment"-->
@@ -21,11 +21,11 @@
 <!--        android:label="fragment_dash2"-->
 <!--        tools:layout="@layout/fragment_dash2" />-->
 
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.chaitanya.home.HomeFragment"
-        android:label="home">
-    </fragment>
+<!--    <fragment-->
+<!--        android:id="@+id/homeFragment"-->
+<!--        android:name="com.chaitanya.home.HomeFragment"-->
+<!--        android:label="home">-->
+<!--    </fragment>-->
     <include app:graph="@navigation/nav_dash"
         >
 
@@ -34,5 +34,10 @@
         >
 
     </include>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.chaitanya.multimodulelearn.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
 
 </navigation>
